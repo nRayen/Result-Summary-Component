@@ -5,43 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="container">
+    <section class="resultsection">
 
-  Your Result
-  76
-  of 100
+      <h2>Your Result</h2>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div class="score">
+        <p><span class="note">76</span><span class="">of 100</span></p>
+      </div>
 
-  Reaction
-  80 / 100
+      <h3 class="mention">Great</h3>
+      <p class="classement">You scored higher than 65% of the people who have taken theses tests</p>
+    </section>
 
-  Memory
-  92 / 100
+    <section class="summary">
+      <h2>Summary</h2>
 
-  Verbal
-  61 / 100
+        <div class="card-container">
+          <article class="card reaction">
+            <img src="./assets/images/icon-reaction.svg" alt="icone reaction">
+            <p>Reaction</p>
+            <p><span>80</span>/100</p>
+          </article>
 
-  Visual
-  72 / 100
+          <article class="card memory">
+            <img src="./assets/images/icon-memory.svg" alt="icone memory">
+            <p>Memory</p>
+            <p><span>92</span>/100</p>
+          </article>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <article class="card verbal">
+            <img src="./assets/images/icon-memory.svg" alt="icone memory">
+            <p>Verbal</p>
+            <p><span>61</span>/100</p>
+          </article>
+
+          <article class="card visual">
+            <img src="./assets/images/icon-memory.svg" alt="icone memory">
+            <p>Visual</p>
+            <p><span>72</span>/100</p>
+          </article>
+        </div>
+
+        <button>Continue</button>
+    </section>
+  </main>
 </body>
 </html>
