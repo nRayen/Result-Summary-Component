@@ -1,3 +1,20 @@
+// Variables
+$lightRed: hsl(0, 100%, 67%);
+$orangey: hsl(39, 100%, 56%);
+$green: hsl(166, 100%, 37%);
+$visualBlue: hsl(234, 85%, 45%);
+
+$bgGradient: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+$circleGradient: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 1));
+
+$white: hsl(0, 0%, 100%);
+$paleBlue: hsl(221, 100%, 96%);
+$lightLavender: hsl(241, 100%, 89%);
+$darkGrayBlue: hsl(224, 30%, 27%);
+
+$font-size: 18px;
+
+//Reset
 *,::before,::after{
     margin: 0;
     padding: 0;
@@ -5,3 +22,8 @@
     text-decoration: none;
     list-style-type: none;
 }
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+

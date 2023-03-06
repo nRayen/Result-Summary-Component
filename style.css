@@ -4,4 +4,8 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
 }/*# sourceMappingURL=style.css.map */
