@@ -8,4 +8,65 @@
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+}
+
+.container {
+  display: flex;
+  width: 50%;
+  height: 550px;
+  border: solid 1px red;
+}
+.container .resultsection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 35px;
+  padding: 40px 50px;
+}
+.container .resultsection h2 {
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 40px;
+}
+.container .resultsection .score {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container .resultsection .score p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .resultsection .score p .note {
+  font-size: 80px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+.container .resultsection .score p span:nth-child(2) {
+  font-weight: 600;
+  color: hsl(241, 100%, 89%);
+}
+.container .resultsection .mention {
+  font-size: 30px;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+}
+.container .resultsection .classement {
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  padding: 0 20px;
 }/*# sourceMappingURL=style.css.map */

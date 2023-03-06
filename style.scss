@@ -5,7 +5,7 @@ $green: hsl(166, 100%, 37%);
 $visualBlue: hsl(234, 85%, 45%);
 
 $bgGradient: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-$circleGradient: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 1));
+$circleGradient: linear-gradient(hsl(256, 72%, 46%),hsla(241, 72%, 46%, 0));
 
 $white: hsl(0, 0%, 100%);
 $paleBlue: hsl(221, 100%, 96%);
@@ -23,7 +23,80 @@ $font-size: 18px;
     list-style-type: none;
 }
 
-body{
-    font-family: 'Hanken Grotesk', sans-serif;
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: $font-size;
+    height: 100vh;
+    @include flexCenter();
+    background-color: #1e1e1e;
+}
+
+.container{
+    display: flex;
+    width: 50%;
+    height: 550px;
+    border: solid 1px red;
+
+    .resultsection{
+        display: flex;
+        align-items: center;
+        //justify-content: space-between;
+        flex-direction: column;
+        width: 50%;
+        background: $bgGradient;
+        border-radius: 35px;
+        padding: 40px 50px;
+
+        h2{
+            color: $lightLavender;
+            margin-bottom: 40px;
+        }
+
+        .score{
+            background: $circleGradient;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            @include flexCenter();
+            margin-bottom: 20px;
+
+            p{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .note{
+                    font-size: 80px;
+                    font-weight: 800;
+                    color: $white;
+                }
+
+                span{
+                    &:nth-child(2){
+                        font-weight: 600;
+                        color: $lightLavender;
+                    }
+                }
+            }
+        }
+
+        .mention{
+            font-size: 30px;
+            font-weight: 800;
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        .classement{
+            color: $lightLavender;
+            text-align:center;
+            padding: 0 20px;
+        }
+    }
+}
