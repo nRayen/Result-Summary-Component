@@ -13,23 +13,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1e1e1e;
 }
 
 .container {
   display: flex;
   width: 50%;
-  height: 550px;
-  border: solid 1px red;
+  height: 525px;
+  box-shadow: 13px 33px 36px 4px hsla(241, 100%, 89%, 0.38);
+  border-radius: 35px;
 }
 .container .resultsection {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 50%;
-  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 35px;
   padding: 40px 50px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 .container .resultsection h2 {
   color: hsl(241, 100%, 89%);
@@ -69,4 +69,94 @@ body {
   color: hsl(241, 100%, 89%);
   text-align: center;
   padding: 0 20px;
+  margin-top: auto;
+}
+.container .summary {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  border-radius: 35px;
+  padding: 40px 50px;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+}
+.container .summary h2 {
+  align-self: flex-start;
+  color: hsl(224, 30%, 27%);
+}
+.container .summary .card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 290px;
+}
+.container .summary .card-container .card {
+  width: 100%;
+  display: flex;
+  height: 55px;
+  padding: 15px;
+  border-radius: 8px;
+  align-items: center;
+}
+.container .summary .card-container .card img {
+  display: block;
+  margin-right: 10px;
+  scale: 1.3;
+}
+.container .summary .card-container .card h3 {
+  display: block;
+  font-size: 18px;
+}
+.container .summary .card-container .card p {
+  display: block;
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+.container .summary .card-container .card p span {
+  color: hsl(224, 30%, 27%);
+}
+.container .summary .card-container .reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.container .summary .card-container .reaction h3 {
+  color: hsl(0, 100%, 67%);
+}
+.container .summary .card-container .memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.container .summary .card-container .memory h3 {
+  color: hsl(39, 100%, 56%);
+}
+.container .summary .card-container .verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.container .summary .card-container .verbal h3 {
+  color: hsl(166, 100%, 37%);
+}
+.container .summary .card-container .visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+.container .summary .card-container .visual h3 {
+  color: hsl(234, 85%, 45%);
+}
+.container .summary button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  background: linear-gradient(hsl(224, 30%, 27%), hsl(224, 30%, 27%));
+  border-radius: 45px;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 18px;
+  transition: background-color 10s;
+}
+.container .summary button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }/*# sourceMappingURL=style.css.map */
