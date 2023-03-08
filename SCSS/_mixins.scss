@@ -1,0 +1,21 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sectionLayout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 35px;
+    padding: 40px 50px;
+}
+
+@mixin cardColors($color, $bg){
+    background-color: $bg;
+    h3{
+        color: $color;
+    }
+}

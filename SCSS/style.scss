@@ -1,18 +1,7 @@
-// ---------------------------------------------------------------------Variables
-$reaction: hsl(0, 100%, 67%);  $bgreaction: hsla(0, 100%, 67%, 0.1);
-$memory: hsl(39, 100%, 56%);  $bgmemory: hsla(39, 100%, 56%,0.1);
-$verbal: hsl(166, 100%, 37%);   $bgverbal: hsla(166, 100%, 37%,0.1);
-$visual: hsl(234, 85%, 45%); $bgvisual: hsla(234, 85%, 45%, 0.1);
+// ---------------------------------------------------------------------Imports
+@import '_variables.scss';
+@import '_mixins.scss';
 
-$bgGradient: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
-$circleGradient: linear-gradient(hsl(256, 72%, 46%),hsla(241, 72%, 46%, 0));
-
-$white: hsl(0, 0%, 100%);
-$paleBlue: hsl(221, 100%, 96%);
-$lightLavender: hsl(241, 100%, 89%);
-$darkGrayBlue: hsl(224, 30%, 27%);
-
-$font-size: 18px;
 
 //---------------------------------------------------------------------Reset
 *,::before,::after{
@@ -25,27 +14,7 @@ $font-size: 18px;
 
 
 // --------------------------------------------------------------------Mixins
-@mixin flexCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-@mixin sectionLayout{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-    border-radius: 35px;
-    padding: 40px 50px;
-}
-
-@mixin cardColors($color, $bg){
-    background-color: $bg;
-    h3{
-        color: $color;
-    }
-}
 
 
 body{ //---------------------------------------------------------------Body
