@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .container {
@@ -21,6 +22,7 @@ body {
   height: 525px;
   box-shadow: 13px 33px 36px 4px hsla(241, 100%, 89%, 0.38);
   border-radius: 35px;
+  background-color: hsl(0, 0%, 100%);
 }
 .container .resultsection {
   display: flex;
@@ -118,6 +120,7 @@ body {
 }
 .container .summary .card-container .card p span {
   color: hsl(224, 30%, 27%);
+  margin-right: 2px;
 }
 .container .summary .card-container .reaction {
   background-color: hsla(0, 100%, 67%, 0.1);

@@ -13,15 +13,12 @@
 }
 
 
-// --------------------------------------------------------------------Mixins
-
-
-
 body{ //---------------------------------------------------------------Body
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: $font-size;
     height: 100vh;
     @include flexCenter();
+    background-color: black;
 }
 
 .container{ // ---------------------------------------------------------Container
@@ -30,6 +27,7 @@ body{ //---------------------------------------------------------------Body
     height: 525px;
     box-shadow: 13px 33px 36px 4px hsla(241, 100%, 89%, 0.38);
     border-radius: 35px;
+    background-color: $white;
 
 
     .resultsection{ // --------------------------------------------------Résultat Général
@@ -129,7 +127,8 @@ body{ //---------------------------------------------------------------Body
                     color: $lightLavender;
 
                     span{
-                        color: $darkGrayBlue
+                        color: $darkGrayBlue;
+                        margin-right: 2px;
                     }
 
                 }
