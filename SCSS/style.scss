@@ -16,7 +16,7 @@
 body{ //---------------------------------------------------------------Body
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: $font-size;
-    height: 100vh;
+    min-height: 100vh;
     @include flexCenter();
 }
 
@@ -160,10 +160,43 @@ body{ //---------------------------------------------------------------Body
             color: $white;
             font-weight: 600;
             font-size: 18px;
+            cursor: pointer;
             transition: background-color 10s;
             &:hover{
                 background: $bgGradient;
             }
+        }
+    }
+}
+
+
+@media screen and (width < 1205px) {
+
+    body{
+        padding: 20px;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .container{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        box-shadow: 0 20px 30px 14px hsla(241, 100%, 89%, 0.38);
+
+        .resultsection{
+            width: 100%;
+        }
+
+        .summary{
+            width: 100%;
+
+            h2, .card-container{
+                margin-bottom: 25px;
+            }
+
+            
         }
     }
 }
