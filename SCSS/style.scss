@@ -18,7 +18,6 @@ body{ //---------------------------------------------------------------Body
     font-size: $font-size;
     height: 100vh;
     @include flexCenter();
-    background-color: black;
 }
 
 .container{ // ---------------------------------------------------------Container
