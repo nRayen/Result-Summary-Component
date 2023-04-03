@@ -164,10 +164,9 @@ body {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-@media screen and (width < 1205px) {
+@media all and (width < 1205px) {
   body {
-    padding: 20px;
-    max-width: 600px;
+    padding: 0;
     height: auto;
     margin: 0 auto;
   }
@@ -179,6 +178,7 @@ body {
   }
   .container .resultsection {
     width: 100%;
+    border-radius: 0 0 35px 35px;
   }
   .container .summary {
     width: 100%;
@@ -186,4 +186,4 @@ body {
   .container .summary h2, .container .summary .card-container {
     margin-bottom: 25px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
