@@ -164,7 +164,7 @@ body {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-@media all and (width < 1205px) {
+@media screen and (max-width: 1205px) {
   body {
     padding: 0;
     height: auto;
